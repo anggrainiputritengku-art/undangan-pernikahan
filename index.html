@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Wedding of Putri & Suami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="flower-spinner">🌸</div>
+            <p>Selamat datang di Undangan Pernikahan Kami</p>
+        </div>
+    </div>
+
+   <div id="music-player">
+    <audio id="wedding-music" loop>
+        <source src="audio/tulus.mp3" type="audio/mp3">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <button id="music-toggle" class="pause">
+        <i class="fas fa-play"></i> 
+    </button>
+</div>
+
+    <section id="welcome" class="full-screen-section bg-image parallax">
+        <div class="golden-border"></div>
+        <div class="welcome-content">
+            <p class="to-text fade-in-up">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+            <h3 id="guest-name" class="invited-guest fade-in-up">Tamu Undangan</h3> 
+            <h4 class="fade-in-up delay-1">Undangan Pernikahan</h4>
+            <h1 class="couple-name fade-in-up delay-2">Putri   &   Daniel</h1>
+            <p class="wedding-date fade-in-up delay-3">17. 11. 2025</p>
+            <button id="open-invitation" class="elegant-button gold-glow fade-in-up delay-4">
+                <i class="fas fa-envelope-open"></i> Buka Undangan
+            </button>
+        </div>
+    </section>
+
+    <section id="countdown-section" class="section-padding center-text">
+        <h2 class="section-title">Menghitung Hari Bahagia</h2>
+        <div id="countdown-timer" class="countdown-box">
+            <div class="count-item"><span id="days">00</span><p>Hari</p></div>
+            <div class="count-item"><span id="hours">00</span><p>Jam</p></div>
+            <div class="count-item"><span id="minutes">00</span><p>Menit</p></div>
+            <div class="count-item"><span id="seconds">00</span><p>Detik</p></div>
+        </div>
+    </section>
+
+    <section id="love-story" class="section-padding">
+        <h2 class="section-title">Kisah Perjalanan Kami</h2>
+        
+        <div class="story-item left-to-right">
+            <div class="story-image story-parallax-left">
+                <img src="images/images1.jpg" alt="Pertemuan Pertama">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="story-text story-parallax-right">
+                <h3>Awal Pertemuan <span class="year">(2018)</span></h3>
+                <p>Layaknya takdir, pertemuan tak terduga di sudut kota. Dari sapaan pertama, kami tahu ada ikatan yang lebih dalam dari sekadar perkenalan biasa.</p>
+            </div>
+        </div>
+        
+        <div class="story-item right-to-left">
+            <div class="story-image story-parallax-right">
+                <img src="images/images2.jpg" alt="Momen Lamaran">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="story-text story-parallax-left">
+                <h3>Mengikat Janji <span class="year">(2023)</span></h3>
+                <p>Dihadapan keluarga, cincin ini menjadi saksi bisu keseriusan kami. Sebuah janji untuk selalu bersama dalam suka maupun duka.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="event-details" class="section-padding bg-event-bg">
+        <h2 class="section-title gold-text">Detail & Waktu</h2>
+
+        <div class="event-card-container">
+            <div class="event-card event-fade">
+                <p class="event-icon"><i class="fas fa-handshake"></i></p>
+                <h3>Akad Nikah</h3>
+                <p class="event-time">08:00 - 10:00 WIB</p>
+                <p class="event-date">Minggu, 17 November 2025</p>
+                <div class="location-details">
+                    <p>Masjid Agung Batam</p>
+                    <p>Jl. Engku Putri Tlk, Batam</p>
+                </div>
+                <a href="https://maps.app.goo.gl/kcKVaJeFRynGU7S16" target="_blank" class="elegant-button small-button">
+                    <i class="fas fa-map-marker-alt"></i> Buka Peta
+                </a>
+            </div>
+
+            <div class="event-card event-fade delay-2">
+                <p class="event-icon"><i class="fas fa-glass-cheers"></i></p>
+                <h3>king's hotel-batam</h3>
+                <p class="event-time">11:00 - Selesai</p>
+                <p class="event-date">Minggu, 17 November 2025</p>
+                <div class="location-details">
+                    <p>Ballroom Hotel Grand Elite</p>
+                    <p>Jl. Yos Sudarso, Batam</p>
+                </div>
+                <a href="https://maps.app.goo.gl/kcKVaJeFRynGU7S16" target="_blank" class="elegant-button small-button">
+                    <i class="fas fa-map-marker-alt"></i> Buka Peta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+        <h2 class="section-title">Galeri Momen Cinta</h2>
+        
+        <div class="gallery-split-item">
+            <div class="gallery-image-wrapper">
+                <img class="split-image" src="images/Preweding.png" alt="Foto Prewedding 1">
+            </div>
+            <div class="gallery-caption">
+                <h4>Hati yang Menyatu</h4>
+                <p>Cinta sejati adalah ketika dua hati berjanji untuk saling melengkapi.</p>
+            </div>
+        </div>
+
+        <div class="gallery-split-item reverse">
+            <div class="gallery-image-wrapper">
+                <img class="split-image" src="images/preweding1.png" alt="Foto Prewedding 2">
+            </div>
+            <div class="gallery-caption">
+                <h4>Menggapai Impian</h4>
+                <p>Tanganmu adalah tempat paling nyaman untuk kami mulai membangun masa depan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gift" class="section-padding center-text bg-gift-bg">
+        <h2 class="section-title gold-text">Kiriman Doa & Hadiah</h2>
+        <div class="gift-box fade-up">
+            <p class="rose-text">Tanpa mengurangi rasa hormat, bagi yang ingin mengirimkan hadiah, dapat melalui:</p>
+            <div class="bank-details">
+                <p>BANK MANDIRI (Putri) <br> **123-456-7890**</p>
+                <button class="copy-button" data-text="123-456-7890">Salin Nomor</button>
+            </div>
+            <div class="bank-details">
+                <p>BANK BNI (Daniel) <br> **098-765-4321**</p>
+                <button class="copy-button" data-text="098-765-4321">Salin Nomor</button>
+            </div>
+            <p class="thank-you-note">Doa restu Anda adalah kado terindah bagi kami.</p>
+        </div>
+    </section>
+
+    <section id="rsvp" class="section-padding">
+        <h2 class="section-title">Tulis Ucapan Selamat</h2>
+        <form id="rsvp-form" class="form-fade">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Nama Anda:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Ucapan & Doa:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="elegant-button gold-glow">Kirim Ucapan Tulus</button>
+            <div id="thank-you-message" class="thank-you-box" style="display:none;">
+                <i class="fas fa-heart"></i> Terima kasih atas ucapan dan doa tulus Anda!
+            </div>
+        </form>
+        </section>
+
+    <section id="closing" class="full-screen-section">
+        <div class="closing-content">
+            <h2 class="closing-thanks">Kami Berterima Kasih</h2>
+            <p class="closing-quote">"Dan di antara tanda-tanda kekuasaan-Nya ialah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."</p>
+            <p class="closing-signature">QS. Ar-Rum: 21</p>
+            <p class="couple-name-signature">Putri & Daniel</p>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
